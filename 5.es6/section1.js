@@ -16,3 +16,9 @@ class Point {
 
 console.log(typeof Point); // "function"
 console.log(Point === Point.prototype.constructor); // true
+
+let p = new Point(5, 8);
+console.log(p.toString()); // (5, 8)
+
+console.log(p.constructor === Point.prototype.constructor); // true
+console.log(p.toString === Point.prototype.toString); // true
