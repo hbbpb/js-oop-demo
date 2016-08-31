@@ -1,0 +1,19 @@
+{
+  "name": "js-oop-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbbpb/js-oop-demo.git"
+  },
+  "author": "pbli@thoughtworks.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hbbpb/js-oop-demo/issues"
+  },
+  "homepage": "https://github.com/hbbpb/js-oop-demo#readme"
+}
