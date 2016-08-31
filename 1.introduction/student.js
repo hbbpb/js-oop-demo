@@ -28,6 +28,20 @@ function Student(firstName, subject) {
 // 不能赋予Person类任何的FirstName参数
 // 调用Person的正确位置如下，我们从Student中来调用它
 Student.prototype = Object.create(Person.prototype); // See note below
+/*
+ 对于“Student.prototype = Object.create(Person.prototype);”这一行，
+ 在不支持 Object.create方法的老JavaScript引擎中，可以使用一个"polyfill"（又名"shim"，查看文章链接），
+ 或者使用一个function来获得相同的返回值，就像下面：
+
+ function createObject(proto) {
+     function ctor() { }
+     ctor.prototype = proto;
+     return new ctor();
+ }
+
+ // Usage:
+ Student.prototype = createObject(Person.prototype);
+ */
 
 // 设置"constructor" 属性指向Student
 Student.prototype.constructor = Student;
