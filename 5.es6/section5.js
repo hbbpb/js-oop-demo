@@ -15,9 +15,6 @@ class Point {
 
 }
 
-
-Point.a = 'abc';
-
 //继承
 class ColorPoint extends Point {
     constructor(x, y, color) {
