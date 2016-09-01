@@ -12,7 +12,11 @@ class Point {
     toString() {
         return '(' + this.x + ', ' + this.y + ')';
     }
+
 }
+
+
+Point.a = 'abc';
 
 //继承
 class ColorPoint extends Point {
